@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=Pixels
+GenericName=Ruler
+Comment=Measure things on your display with pixel perfect precision
+Categories=Utility;Graphics;
+Exec=com.github.cassidyjames.pixels
+Icon=com.github.cassidyjames.pixels
+Terminal=false
+Type=Application
+X-GNOME-Gettext-Domain=com.github.cassidyjames.pixels
+Keywords=design;measurement;
+
