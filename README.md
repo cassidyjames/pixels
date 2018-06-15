@@ -8,6 +8,12 @@
   <a href="https://appcenter.elementary.io/com.github.cassidyjames.pixels"><img src="https://appcenter.elementary.io/badge.svg?new" alt="Get it on AppCenter" /></a>
 </p>
 
+![Screenshot](data/screenshot.png)
+
+## Measure things on your display
+
+Quickly pull up the Pixels ruler to measure how large something is in pixels. Handy reference marks for common pixel sizes like 16, 32, 64, 128, and 256.
+
 ## Made for [elementary OS](https://elementary.io)
 
 Pixels is designed and developed on and for [elementary OS](https://elementary.io). Purchasing through AppCenter directly supports the development and ensures instant updates straight from me. Get it on AppCenter for the best experience.

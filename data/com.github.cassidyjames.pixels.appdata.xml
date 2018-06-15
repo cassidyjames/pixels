@@ -5,9 +5,9 @@
   <metadata_license>CC0</metadata_license>
   <project_license>GPL-3.0+</project_license>
   <name>Pixels</name>
-  <summary>Measure things on your display with pixel perfect precision</summary>
+  <summary>Measure things on your display</summary>
   <description>
-    <p>Measure stuff</p>
+    <p>Quickly pull up the Pixels ruler to measure how large something is in pixels. Handy reference marks for common pixel sizes like 16, 32, 64, 128, and 256.</p>
   </description>
   <provides>
     <binary>com.github.cassidyjames.pixels</binary>
