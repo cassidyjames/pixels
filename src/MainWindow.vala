@@ -21,47 +21,48 @@
 
 public class MainWindow : Gtk.Window {
     private const string CSS = """
-      .pixels {
+        .pixels {
 
-      }
+        }
     """;
 
-  public MainWindow (Gtk.Application application) {
-    Object (
-      application: application,
-      border_width: 0,
-      decorated: false,
-      height_request: 64,
-      icon_name: "com.github.cassidyjames.pixels",
-      resizable: false,
-      title: _("Pixels"),
-      width_request: 512,
-      window_position: Gtk.WindowPosition.CENTER
-    );
-  }
+    public MainWindow (Gtk.Application application) {
+        Object (
+            application: application,
+            border_width: 0,
+            decorated: false,
+            height_request: 64,
+            icon_name: "com.github.cassidyjames.pixels",
+            resizable: false,
+            title: _("Pixels"),
+            width_request: 512,
+            window_position: Gtk.WindowPosition.CENTER
+        );
+    }
 
-  construct {
-    var main_layout = new Gtk.Grid ();
-    main_layout.column_spacing = 6;
-    main_layout.row_spacing = 6;
-    main_layout.attach (new Gtk.Label ("Pixels"), 0, 0);
+    construct {
+        var main_layout = new Gtk.Grid ();
+        main_layout.column_spacing = 6;
+        main_layout.row_spacing = 6;
+        main_layout.attach (new Gtk.Label ("Pixels"), 0, 0);
 
-    get_style_context ().add_class ("pixels");
-    get_style_context ().add_class ("rounded");
+        get_style_context ().add_class ("pixels");
+        get_style_context ().add_class ("rounded");
 
-    var provider = new Gtk.CssProvider ();
-    try {
-        provider.load_from_data (CSS, CSS.length);
+        var provider = new Gtk.CssProvider ();
+        try {
+            provider.load_from_data (CSS, CSS.length);
 
-        Gtk.StyleContext.add_provider_for_screen (
+            Gtk.StyleContext.add_provider_for_screen (
             Gdk.Screen.get_default (),
             provider,
             Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION
-        );
-    } catch (GLib.Error e) {
-        return;
-    }
+            );
+        } catch (GLib.Error e) {
+            return;
+        }
 
-    add (main_layout);
-  }
+        add (main_layout);
+    }
 }
+
